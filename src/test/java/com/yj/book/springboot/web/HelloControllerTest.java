@@ -23,7 +23,6 @@ public class HelloControllerTest {
     public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
-
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
