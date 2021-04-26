@@ -18,7 +18,6 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-
     @After
     public void cleanup() {
         postsRepository.deleteAll();
